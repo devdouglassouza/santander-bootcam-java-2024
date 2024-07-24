@@ -6,5 +6,7 @@ spring:
   jpa:
     open-in-view: false
     hibernate:
-      ddl-auto: create
-      dialect: org.hibernate.dialect.PostgreSQLDialect -rnd_rss
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
